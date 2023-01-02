@@ -136,6 +136,37 @@ header {
 	}
 }
 
+.aboutus-hero {
+	position: relative;
+	background-image: url('../img/technologysmall.jpg');
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	color: $light-gray;
+	z-index: 0;
+
+	.aboutus-shadow {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.7);
+		z-index: -1;
+	}
+
+	.aboutus-hero-item {
+		margin: 10px 0;
+
+		i {
+			font-size: 36px;
+		}
+
+		.aboutus-hero-title {
+			font-size: 24px;
+		}
+	}
+}
+
 @media (min-width: 768px) {
 	header {
 		h1 {
