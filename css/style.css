@@ -6,6 +6,10 @@
   margin: 0;
 }
 
+html {
+  scroll-padding-top: 82px;
+}
+
 body {
   position: relative;
   font-family: "Montserrat", sans-serif;
@@ -113,6 +117,12 @@ header .fa-chevron-down {
 .aboutus .aboutus-card-text {
   font-size: 14px;
 }
+.aboutus .aboutus-hover {
+  transition: color 0.3s;
+}
+.aboutus .aboutus-hover:hover {
+  color: #039dff;
+}
 
 @media (min-width: 768px) {
   header h1 {
@@ -120,6 +130,11 @@ header .fa-chevron-down {
   }
   header p {
     font-size: 20px;
+  }
+}
+@media (min-width: 992px) {
+  html {
+    scroll-padding-top: 72px;
   }
 }
 @media (min-width: 1200px) {

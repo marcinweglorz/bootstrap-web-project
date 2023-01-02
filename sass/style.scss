@@ -8,6 +8,10 @@
 	margin: 0;
 }
 
+html {
+	scroll-padding-top: 82px;
+}
+
 body {
 	position: relative;
 	font-family: 'Montserrat', sans-serif;
@@ -20,10 +24,10 @@ h2 {
 }
 
 .underline {
-    margin: 0 auto 40px;
-    width: 80px;
-    height: 4px;
-    background-color: $main-color;
+	margin: 0 auto 40px;
+	width: 80px;
+	height: 4px;
+	background-color: $main-color;
 }
 .shadow-bg {
 	background: rgba(0, 0, 0, 0.8);
@@ -110,20 +114,26 @@ header {
 	}
 }
 
-
 .aboutus {
-    i {
-        margin-top: 20px;
-        font-size: 30px;
-    }
+	i {
+		margin-top: 20px;
+		font-size: 30px;
+	}
 
-    .aboutus-card-title {
-        font-size: 18px;
-        text-transform: uppercase;
-    }
-    .aboutus-card-text {
-        font-size: 14px;
-    }
+	.aboutus-card-title {
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+	.aboutus-card-text {
+		font-size: 14px;
+	}
+
+	.aboutus-hover {
+		transition: color 0.3s;
+	}
+	.aboutus-hover:hover {
+		color: $main-color;
+	}
 }
 
 @media (min-width: 768px) {
@@ -134,6 +144,12 @@ header {
 		p {
 			font-size: 20px;
 		}
+	}
+}
+
+@media (min-width: 992px) {
+	html {
+		scroll-padding-top: 72px;
 	}
 }
 
