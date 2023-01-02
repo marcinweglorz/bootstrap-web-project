@@ -141,7 +141,6 @@ header {
 	background-image: url('../img/technologysmall.jpg');
 	background-position: center;
 	background-size: cover;
-	background-attachment: fixed;
 	color: $light-gray;
 	z-index: 0;
 
@@ -181,6 +180,10 @@ header {
 @media (min-width: 992px) {
 	html {
 		scroll-padding-top: 72px;
+	}
+
+	.aboutus-hero {
+		background-image: url('../img/headerimg-big.jpg');
 	}
 }
 
