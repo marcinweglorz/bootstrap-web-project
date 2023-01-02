@@ -14,8 +14,23 @@ body {
 	background-color: #444;
 }
 
+h2 {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.underline {
+    margin: 0 auto 40px;
+    width: 80px;
+    height: 4px;
+    background-color: $main-color;
+}
+.shadow-bg {
+	background: rgba(0, 0, 0, 0.8);
+}
+
 .blue-text {
-	color: $blue-color;
+	color: $main-color;
 }
 
 nav .navbar-nav .nav-link.active {
@@ -24,6 +39,7 @@ nav .navbar-nav .nav-link.active {
 
 #navbar {
 	text-transform: uppercase;
+	transition: background-color rgba (0, 0, 0, 0.8);
 	z-index: 1;
 	a,
 	i {
@@ -31,7 +47,7 @@ nav .navbar-nav .nav-link.active {
 	}
 
 	a:hover {
-		color: $blue-color;
+		color: $main-color;
 	}
 	.fa-bars {
 		padding: 10px;
@@ -41,7 +57,7 @@ nav .navbar-nav .nav-link.active {
 		font-weight: bold;
 	}
 	.active {
-		color: $blue-color;
+		color: $main-color;
 	}
 }
 
@@ -91,6 +107,33 @@ header {
 		transform: translateX(-50%);
 		font-size: 30px;
 		color: $white-color;
+	}
+}
+
+
+.aboutus {
+    i {
+        margin-top: 20px;
+        font-size: 30px;
+    }
+
+    .aboutus-card-title {
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+    .aboutus-card-text {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) {
+	header {
+		h1 {
+			font-size: 30px;
+		}
+		p {
+			font-size: 20px;
+		}
 	}
 }
 
