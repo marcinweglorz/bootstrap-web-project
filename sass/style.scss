@@ -15,7 +15,7 @@ html {
 body {
 	position: relative;
 	font-family: 'Montserrat', sans-serif;
-	background-color: #444;
+	background-color: $bg-color;
 }
 
 h2 {
@@ -184,6 +184,50 @@ header {
 	}
 }
 
+.prices {
+	.price-box {
+		margin: 20px 10px;
+		padding: 30px;
+		background-color: $bg-color;
+		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+		transition: transform 0.3s;
+
+		h3 {
+			color: $main-color;
+			text-transform: uppercase;
+		}
+
+		span {
+			font-weight: bold;
+		}
+
+		i {
+			padding: 0 5px;
+			font-size: 25px;
+		}
+		button {
+			padding: 10px 20px;
+			text-transform: uppercase;
+		}
+		.price-tag {
+			font-size: 30px;
+			font-weight: bold;
+		}
+	}
+
+	.prboxice-:hover {
+		transform: scale(1.05);
+	}
+
+	.price-info {
+		margin-top: 30px;
+
+		a {
+			text-decoration: none;
+		}
+	}
+}
+
 @media (min-width: 768px) {
 	header {
 		h1 {
@@ -197,11 +241,16 @@ header {
 
 @media (min-width: 992px) {
 	html {
-		scroll-padding-top: 72px;
+		height: 82px;
 	}
 
 	.aboutus-hero {
 		background-image: url('../img/technologybig.jpg');
+	}
+	.prices {
+		.price-info {
+			font-size: 18px;
+		}
 	}
 }
 
