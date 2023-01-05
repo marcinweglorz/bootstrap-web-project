@@ -215,7 +215,7 @@ header {
 		}
 	}
 
-	.prboxice-:hover {
+	.price-box:hover {
 		transform: scale(1.05);
 	}
 
@@ -225,6 +225,49 @@ header {
 		a {
 			text-decoration: none;
 		}
+	}
+}
+
+.team {
+	position: relative;
+	width: 100%;
+	background-image: url(../img/office-4959787_1920.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	z-index: 0;
+
+	h2 {
+		color: $bg-color;
+	}
+
+	.team-shadow {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.7);
+		z-index: -5;
+	}
+
+	.card {
+		transition: transform 0.3s;
+
+		img {
+			height: 200px;
+			object-fit: cover;
+		}
+
+		i {
+			padding: 10px;
+		}
+	}
+	.card:hover {
+		transform: scale(0.96);
+	}
+	.card-title {
+		margin-bottom: 20px;
+		text-transform: uppercase;
+		text-align: center;
 	}
 }
 
