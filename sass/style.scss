@@ -269,6 +269,10 @@ header {
 		text-transform: uppercase;
 		text-align: center;
 	}
+
+	.card-body {
+		height: 160px;
+	}
 }
 
 @media (min-width: 768px) {
@@ -278,6 +282,14 @@ header {
 		}
 		p {
 			font-size: 20px;
+		}
+	}
+
+	.team {
+		card {
+			.card-img-top {
+				height: 150px;
+			}
 		}
 	}
 }
