@@ -275,6 +275,13 @@ header {
 	}
 }
 
+@media (min-width: 375px) {
+	.team {
+		.card-body {
+			height: 210px;
+		}
+	}
+}
 @media (min-width: 768px) {
 	header {
 		h1 {
@@ -282,14 +289,6 @@ header {
 		}
 		p {
 			font-size: 20px;
-		}
-	}
-
-	.team {
-		card {
-			.card-img-top {
-				height: 150px;
-			}
 		}
 	}
 }
