@@ -304,6 +304,7 @@ header .fa-chevron-down {
 .contact .contact-us .contact-item .social-media i {
   padding: 15px;
   color: #fff;
+  transition: 0.3s;
 }
 .contact .contact-us .contact-item .social-media i:hover {
   color: #ddd;
