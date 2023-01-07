@@ -275,6 +275,28 @@ header {
 	}
 }
 
+.achievements {
+	i {
+		padding: 10px;
+		font-size: 48px;
+		color: $white-color;
+		text-shadow: 0 0 5px black;
+	}
+
+	.achievements-list {
+		padding: 20px 0;
+	}
+
+	.achievements-number {
+		font-size: 22px;
+	}
+
+	.achievements-text {
+		text-transform: uppercase;
+		font-size: 13px;
+	}
+}
+
 @media (min-width: 375px) {
 	.team {
 		.card-body {
